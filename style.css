@@ -1,0 +1,503 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    background: #555; 
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    font-size: 3vw;
+    margin: 1vh;
+    transition: 0.6s ease-in;
+}
+ h1:hover{
+    cursor: pointer;
+    color: aqua;
+    text-shadow: 2px 2px 7px aqua;
+}
+
+/* -----Navbar----- */
+nav{
+    height: 70px;
+    width: 100%;
+    margin: 0 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s ease-in-out;
+}
+
+#nav-name{
+    font-size: 3vw;
+    font-weight: 500;
+    transition: 0.6s all;
+}
+#nav-name span{
+    color: aqua;
+    font-size: 4vw;
+    transition: 0.6s all;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 4vw;
+    transition: 0.6s all;
+}
+.nav-links a{
+    text-decoration: none;
+    font-size: 2vw;
+    transition: 0.6s ease-out;
+}
+.nav-links a:hover{
+    color: #0f0;
+}
+
+
+@media screen and (max-width:780px) {
+    nav{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    #nav-name{
+        font-size: 2vw;
+    }
+    #nav-name span{
+        font-size: 5vh;
+    }
+    .nav-links{
+        font-size: 5vw;
+    }
+    
+}
+
+
+/* -----Header----- */
+header{
+    height: 90vh;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+}
+
+.head-info{
+    width: 50%;
+}
+.head-profile{
+    width: 50%;
+}
+
+.head-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.head-info h2{
+    font-size: 5vw;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.head-info h2 span{
+    font-size: 6vw;
+    font-weight: 800;
+    color: crimson;
+}
+.head-info h4{
+    font-size: 2.5vw;
+    font-weight: 400;
+}
+
+.head-profile{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head-profile .image{
+    height: 80%;
+    width: 80%;
+    background: linear-gradient(yellow,pink,blue,red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head-profile .image img{
+    height: 90%;
+    width: 90%;
+}
+
+@media screen and (max-width:780px) {
+    header{
+        height: auto;
+        flex-direction: column;
+    }
+    .head-info{
+        height: auto;
+        width: 100%;
+        margin: 10px 0;
+    }
+    .head-profile{
+        height: auto;
+        width: 90%;
+        margin: 5px auto;
+    }
+    .head-profile .image{
+        padding: 2vh;
+    }
+    
+}
+
+/* -----About----- */
+#about{
+    height: 60vh;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+}
+
+.about-info{
+    height: 100%;
+    width: 50%;
+}
+.about-image{
+    height: 100%;
+    width: 50%;
+}
+
+.about-info{
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-info p{
+    font-size: 1.2vw;
+    text-align: justify;
+}
+.about-info button{
+    font-size: 1.5vw;
+    margin: 2vh 0;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 0.5vw;
+}
+.about-info button a{
+    text-decoration: none;
+}
+.about-info button a:hover{
+    cursor: pointer;
+    color: aqua;
+    text-shadow: 5px 5px 7px aqua;
+}
+.about-image{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-image:hover{
+    border: 2px solid red;
+}
+.about-image img{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease-in;
+}
+.about-image img:hover{
+    transform: scale(1.5);
+}
+
+@media screen and (max-width:780px)  {
+    #about{
+        height: auto;
+        flex-direction: column;
+    }
+    .about-info{
+        width: 80%;
+        margin: auto;
+    }
+    h1{
+        font-size: 6vw;
+    }
+    .about-image{
+        width: 95%;
+        border: 1px solid red;
+        margin: auto;
+    }
+    .about-info p{
+        font-size: 2.5vw;
+    }
+    .about-info button{
+        font-size: 6vw;
+        padding: 2vh;
+    }
+}
+
+/* -----Education----- */
+#knowlegde{
+    height: 100vh;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.know-education{
+    height: 100%;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.know-education ul li{
+    list-style: none;
+    padding: 2vh;
+    font-size: 1.7vw;
+}
+.know-education ul li span{
+    color: aqua;
+    font-size: 2vw;
+}
+
+
+.know-skills{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skills{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10PX;
+}
+.skills-heading h1{
+    font-size: 2vw;
+}
+.skills-bar{
+    height: 4vh;
+    width: 70%;
+    background-color: crimson;
+}
+.skills-percent{
+    height: 100%;
+    background-color: #0f0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: 1s linear;
+}
+.skills-percent:hover{
+    cursor: pointer;
+    width: 20%;
+}
+.skills-percent h4{
+    background-color: #0f0;
+}
+
+.html{
+    width: 90%;
+}
+.css{
+    width: 80%;
+}
+.js{
+    width: 75%;
+}
+.react{
+    width: 50%;
+}
+.photoshop{
+    width: 90%;
+}
+.group{
+    width: 75%;
+}
+
+@media screen and (max-width:780px) {
+    #knowlegde{
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .know-education{
+        height: 50%;
+        width: 100%;
+        font-size: 3vw;
+    }
+    .know-education ul li{
+        list-style: none;
+        padding: 1vh;
+        font-size: 5vw;
+    }
+    .know-education ul li span{
+        color: aqua;
+        font-size: 5vw;
+    }
+    .skills{
+        flex-direction: column;
+    }
+    .know-skills{
+        height: 50%;
+        width: 100%;
+        font-size: 3vw;
+    }
+    .skills-heading h1{
+        font-size: 4vw;
+    }
+}
+
+/* -----Projects----- */
+#projects{
+    height: 90vh;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pro-container{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#box{
+    height: 90%;
+    width: 48%;
+    text-align: center;
+    padding: 10px;  
+    border: 2px solid blue;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+}
+#box:hover{
+    border: 2px solid red;
+    border-radius: 10%;
+}
+#box a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin:10px 0;
+    font-size: 2vw;
+    font-weight: 100;
+    transition: 0.5s all;
+}
+#box .image{
+    height: 80%;
+    width: 80%;
+}
+#box .image img{
+    height: 100%;
+    width: 100%;
+    transition: 2s ease-in-out;
+}
+#box .image img:hover{
+    transform: skew(180deg);
+    border: black;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:780px){
+    #projects{
+        height: auto;
+    }
+    .pro-container{
+        flex-direction: column;
+        height: auto;
+    }
+    #box{
+        width: 95%;
+        margin: 15px auto;
+    }
+}
+
+
+/* -----Contact----- */
+#contact{
+    height: 40vh;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+}
+#contact a{
+    text-decoration: none;
+}
+#contact .fa-brands{
+    color: crimson;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+#contact .fa-brands:hover{
+    color: blue;
+    box-shadow: 2px 2px 5px crimson;
+    background-color: yellow;
+    transform: scale(1.1);
+}
+
+#contact h4{
+    font-size: 2vw;
+    padding: 10px;
+}
+#contact p{
+    font-size: 2vw;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+@media screen and (max-width:780px){
+    #contact{
+        height: auto;
+    }
+    #contact h4{
+        font-size: 3vw;
+    }
+    #contact p{
+        font-size: 3vw;
+    }
+}
+
+/* -----footer----- */
+footer{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4vw;
+    background: #444;
+}
+footer h3{
+    background: #444;
+}
